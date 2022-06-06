@@ -36,8 +36,9 @@ try {
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = $subject;
-    $mail->Body    = $body;
+    $mail->email = $email;
+    $mail->name = $name;
+    $mail->ticket-type = $ticket-type;
     $mail->AltBody = "Please, enable HTML email on your email account. Thank you!";
 
     $mail->send();
