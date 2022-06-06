@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-function send_mail($to, $name, $subject, $body){
+function send_mail($to, $name, $email, $ticket_type){
 
 
 
