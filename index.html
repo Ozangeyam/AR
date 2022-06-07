@@ -945,8 +945,16 @@
                       $name = $_POST['name'];
                       $email = $_POST['email'];
                       $ttype = $_POST['ticket-type'];
-                      $send = send_mail(...)
-                      }
+                      $send = send_mail($_GET['name'], $email, $_GET['ticket-type']);
+                      // var_dump($post);
+                    if ($send === true) {
+                      header("Location: email?action=success");
+                      exit();
+                    }else{
+                      header("Location: email?action=fail");
+                      exit();
+                    }
+                 }
                   ?>
               </form>
             </div>
