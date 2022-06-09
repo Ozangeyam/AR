@@ -948,10 +948,10 @@
                       $send = send_mail($_GET['name'], $email, $_GET['ticket-type']);
                       // var_dump($post);
                     if ($send === true) {
-                      header("Location: email?action=success");
+                      header('email.php: email?action=success');
                       exit();
                     }else{
-                      header("Location: email?action=fail");
+                      header('email.php: email?action=fail');
                       exit();
                     }
                  }
