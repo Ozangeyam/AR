@@ -837,7 +837,7 @@
 
         <div class="section-header">
           <h2>Buy Tickets</h2>
-          <p>Choose your ticket.</p>
+          <p>PLEASE USE THE RED CHAT BUTTON ON THE WEBSITE TO BUY YOUR DESIRED TICKET</p>
         </div>
 
         <div class="row">
@@ -845,7 +845,7 @@
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
-                <h6 class="card-price text-center">$75</h6>
+                <h6 class="card-price text-center">$100</h6>
                 <hr>
                 <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
@@ -857,7 +857,7 @@
                 </ul>
                 <hr>
                 <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                  <button>Buy with the BLUE chatButton</button>
 
                 </div>
               </div>
@@ -879,7 +879,7 @@
                 </ul>
                 <hr>
                 <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                  <button>Buy with the RED chatButton</button>
                 </div>
               </div>
             </div>
@@ -901,7 +901,7 @@
                 </ul>
                 <hr>
                 <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                  <button>Buy with the RED chatButton</button>
                 </div>
 
               </div>
@@ -938,24 +938,9 @@
                   </select>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn">Buy Now</button>
+                  <button>Buy with the RED chatButton</button>
                 </div>
-                 <?php
-                    If(isset($_POST['submit'])){
-                      $name = $_POST['name'];
-                      $email = $_POST['email'];
-                      $ttype = $_POST['ticket-type'];
-                      $send = send_mail($_GET['name'], $email, $_GET['ticket-type']);
-                      // var_dump($post);
-                    if ($send === true) {
-                      header('email.php: email?action=success');
-                      exit();
-                    }else{
-                      header('email.php: email?action=fail');
-                      exit();
-                    }
-                 }
-                  ?>
+          
               </form>
             </div>
           </div><!-- /.modal-content -->
