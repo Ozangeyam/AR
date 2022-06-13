@@ -18,7 +18,7 @@ try {
     $mail->Host = 'lvdnangelremix.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'info@lvdnangelremix.com';                 // SMTP username
-    $mail->Password = 'GgV?b9UsP1nc';                           // SMTP password
+    $mail->Password = '5K85PG%(r4ik';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                   // TCP port to connect to
 
